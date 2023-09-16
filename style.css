@@ -1,0 +1,117 @@
+@font-face {
+    src: url(fonts/Merriweather-Light.ttf);
+    font-family:'Merri-300', sans-serif ;
+}
+
+@font-face {
+    src: url(fonts/Merriweather-Bold.ttf);
+    font-family:'Merri-700', sans-serif ;
+}
+
+@font-face {
+    src: url(fonts/Varta-Light.ttf);
+    font-family:'Varta-300', sans-serif ;
+}
+@font-face {
+    src: url(fonts/Varta-Regular.ttf);
+    font-family:'Varta-400', sans-serif ;
+}
+@font-face {
+    src: url(fonts/Varta-Medium.ttf);
+    font-family:'Varta-500', sans-serif ;
+}
+@font-face {
+    src: url(fonts/Varta-SemiBold.ttf);
+    font-family:'Varta-600', sans-serif ;
+}
+@font-face {
+    src: url(fonts/Varta-Bold.ttf);
+    font-family:'Varta-700', sans-serif ;
+}
+:root{
+    --white: #fff;
+    --black:#121212 ;
+    --terracote: #A06056; 
+    --light-brown: #706458;
+    --background: #F3EEE8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    background: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    font-weight: 400;
+    font-family: 'Varta-400',sans-serif;
+    background: var(--background);
+    color: var(--light-brown);
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header */
+
+/* navbar */
+
+
+header .navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+header .navbar .container .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+header .navbar .container .left .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+header .navbar .container .left .menu .link{
+   font-size: 18px;
+   font-weight: 400;
+   font-family: 'Varta-400',sans-serif;
+   color: var(--light-brown);
+}
+
+header .navbar .container .right a{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+header .navbar .container .right a i{
+    font-size: 26px;
+}
