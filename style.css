@@ -1,71 +1,77 @@
 @font-face {
     src: url(fonts/Merriweather-Light.ttf);
-    font-family:'Merri-300', sans-serif ;
+    font-family: 'Merri-300';
 }
 
 @font-face {
     src: url(fonts/Merriweather-Bold.ttf);
-    font-family:'Merri-700', sans-serif ;
+    font-family: 'Merri-700';
 }
 
 @font-face {
     src: url(fonts/Varta-Light.ttf);
-    font-family:'Varta-300', sans-serif ;
+    font-family: 'Varta-300';
 }
+
 @font-face {
     src: url(fonts/Varta-Regular.ttf);
-    font-family:'Varta-400', sans-serif ;
+    font-family: 'Varta-400';
 }
+
 @font-face {
     src: url(fonts/Varta-Medium.ttf);
-    font-family:'Varta-500', sans-serif ;
+    font-family: 'Varta-500';
 }
+
 @font-face {
     src: url(fonts/Varta-SemiBold.ttf);
-    font-family:'Varta-600', sans-serif ;
+    font-family: 'Varta-600';
 }
+
 @font-face {
     src: url(fonts/Varta-Bold.ttf);
-    font-family:'Varta-700', sans-serif ;
+    font-family: 'Varta-700';
 }
-:root{
+
+:root {
     --white: #fff;
-    --black:#121212 ;
-    --terracote: #A06056; 
+    --black: #121212;
+    --terracote: #A06056;
     --light-brown: #706458;
     --background: #F3EEE8;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
 }
 
-a{
+a {
     display: inline-block;
     text-decoration: none;
 }
 
-button{
+button {
     border: 0;
     background: 0;
     outline: none;
     cursor: pointer;
 }
 
-body{
+body {
     font-weight: 400;
-    font-family: 'Varta-400',sans-serif;
+    font-family: 'Varta-400', sans-serif;
     background: var(--background);
     color: var(--light-brown);
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1170px;
     padding: 0 15px;
@@ -73,36 +79,56 @@ body{
 }
 
 /* header */
+.header {
+    position: relative;
+}
+
+header::before {
+    content: '';
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: url(images/header-bg.png) no-repeat right / cover;
+}
 
 /* navbar */
 
 
-header .navbar .container{
+header .navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 55px 0;
+    padding: 55px 15px;
 }
-header .navbar .container .left{
+
+header .navbar .container .left {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
 }
-header .navbar .container .left .menu{
+header .navbar .container .left .logo-mobile{
+    display: none;
+}
+
+header .navbar .container .left .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
 }
-header .navbar .container .left .menu .link{
-   font-size: 18px;
-   font-weight: 400;
-   font-family: 'Varta-400',sans-serif;
-   color: var(--light-brown);
+
+header .navbar .container .left .menu .link {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Varta-400', sans-serif;
+    color: var(--light-brown);
 }
 
-header .navbar .container .right a{
+header .navbar .container .right a {
     width: 50px;
     height: 50px;
     border: 2px solid var(--white);
@@ -112,6 +138,124 @@ header .navbar .container .right a{
     justify-content: center;
     border-radius: 50%;
 }
-header .navbar .container .right a i{
+
+header .navbar .container .right a i {
     font-size: 26px;
+}
+
+header .navbar .container .burger a {
+    font-size: 26px;
+    color: var(--white);
+}
+
+header .navbar .container .burger {
+    display: none;
+}
+.header .navbar .container .burger a{
+    color: var(--white);
+}
+
+/* header hero */
+header .hero .container .subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Varta-700';
+    letter-spacing: 1px;
+    color: var(--terracote);
+}
+
+header .hero .container .title {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Merri-300';
+    line-height: 70px;
+    color: var(--terracote);
+    max-width: 420px;
+    margin: 50px 0 30px;
+}
+
+header .hero .container .text {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Varta-300';
+    line-height: 31px;
+    max-width: 420px;
+    color: var(--light-brown);
+}
+
+header .hero .container .arrow {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--terracote);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+header .hero .container .arrow i {
+    color: var(--terracote);
+    font-size: 20px;
+}
+
+/* projects */
+.projects {
+    margin: 65px 0;
+}
+
+.projects .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .container .left .title {
+    width: 458px;
+    height: 188px;
+    color: var(--light-brown);
+    font-weight: 300;
+    font-size: 55px;
+    font-family: 'Merri-300';
+    line-height: 60px;
+    letter-spacing: -0.6px;
+}
+
+.projects .container .left .text {
+    color: var(--terracote);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px; 
+    letter-spacing: 0.3px;
+    margin-top: 30px;
+    font-family: 'Varta-700';
+}
+
+.projects .container .right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.projects .container .right .card{
+    width: 258px;   
+}
+.projects .container .right .title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Varta-600';
+    letter-spacing: -0.2px;
+    line-height: 30px;
+    color: var(--terracote);
+}
+
+.projects .container .right .text{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Varta-400';
+    line-height: 25px;
+    color: var(--light-brown);
+    margin-top: 12px;
+    
 }

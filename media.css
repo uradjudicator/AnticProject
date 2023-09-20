@@ -1,0 +1,138 @@
+/* 1025 */
+@media(max-width:1025px) {}
+
+/* 770px */
+@media(max-width:770px) {}
+
+/* 570px */
+@media(max-width:570px) {
+    .header nav .left .logo{
+        display: none;
+        
+    }
+    header .navbar .container .left .logo-mobile{
+        display: block; 
+    }
+    .header .hero {
+        text-align: center;
+    }
+
+    .header .hero .container .subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Varta-700';
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 20px;
+        color: #fff;
+        margin-top: 91px;
+    }
+
+    .header .hero .container .title {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 300;
+        font-family: 'Merri-300';
+        line-height: 40px;
+        letter-spacing: -0.3px;
+        width: 325px;
+        margin: 24px auto;
+    }
+
+    .header .hero .container .text {
+        width: 325px;
+        font-family: 'Varta-400';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #fff;
+        margin: 0 auto 24px;
+    }
+
+    .header .hero .container .arrow {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    header .hero .container .arrow i {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .header::before {
+        background: url(images/header-bg-media.png) no-repeat center / cover;
+        width: 100%;
+    }
+
+    header .navbar .container .right,
+    header .navbar .container .left .menu {
+        display: none;
+    }
+
+    header .navbar .container .burger {
+        display: block;
+    }
+
+    /* project */
+    .projects .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .projects .container .left {
+        margin-bottom: 41px;
+    }
+
+    .projects .container .left .title {
+        width: 311px;
+        height: 120px;
+        color: var(--light-brown);
+        font-weight: 400;
+        font-size: 35px;
+        font-family: 'Merri-300';
+        line-height: 40px;
+        letter-spacing: -0.3px;
+
+    }
+
+    .projects .container .left .text {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.3px;
+        margin-top: 30px;
+        font-family: 'Varta-700';
+    }
+
+    .projects .container .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .projects .container .right .card .title {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: -0.2px;
+    }
+
+    .projects .container .right .card .text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}
+
+/* 425px */
+@media(max-width:425px) {}

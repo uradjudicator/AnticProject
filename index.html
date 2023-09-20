@@ -11,13 +11,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 
     <title>Antic</title>
 </head>
 
 <body>
     <!--Header-->
-    <header>
+    <header class="header">
         <!-- Nav -->
         <nav class="navbar">
             <div class="container">
@@ -25,6 +26,9 @@
                 <div class="left">
                     <div class="logo">
                         <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="logo-mobile">
+                        <img src="images/antic-mobile.png" alt="">
                     </div>
                     <ul class="menu">
                         <li><a href="#" class="link">Products</a></li>
@@ -39,12 +43,69 @@
                         <i class="fa-solid fa-comments-dollar"></i>
                     </a>
                 </div>
+                <!-- burger -->
+                <div class="burger">
+                    <a href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+
             </div>
         </nav>
 
         <!-- hero -->
-        <section class="hero"></section>
+        <section class="hero">
+            <div class="container">
+                <h3 class="subtitle">HOME DESIGN</h3>
+                <h1 class="title">Elegance for
+                    Interiors & Exteriors</h1>
+                <p class="text">We provide everyone with modern,
+                    trendy, quality furniture</p>
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
     </header>
+
+    <!-- projecs -->
+    <section class="projects">
+        <div class="container">
+            <!-- right -->
+            <div class="left">
+                <h1 class="title">We stay by your side to design your projects</h1>
+                <p class="text">Find out more <i class="fa-solid fa-chevron-right fa-sm"></i></p>
+            </div>
+            <!-- left -->
+            <div class="right">
+                <!-- card -->
+                <div class="card">
+                    <h3 class="title">Our Advices</h3>
+                    <p class="text">What if you took advantage of this rather special period to rethink your interior?
+                        You
+                        spend more time at home so you might as well feel good there.</p>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <h3 class="title">Click and Collect</h3>
+                    <p class="text">Adapted and contactless. Free from € 200 of purchases in stores offering the
+                        service.</p>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <h3 class="title">Conception Service</h3>
+                    <p class="text">Personalized service with an expert advisor for your interior and exterior
+                        decoration or layout projects. </p>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <h3 class="title">Installation Service</h3>
+                    <p class="text">Our furniture packaged in flat packs are designed for easy assembly. But you can
+                        call on our partner..</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
